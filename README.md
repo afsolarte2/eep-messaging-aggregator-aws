@@ -11,10 +11,10 @@ A company has a microservices architecture, and need to retrieve the information
 Staring at the nature of this problem, the best solution found is by communicating the microservices with messaging systems, in this case AWS Simple Notification Service, the Requester and Repliers can be AWS Lambda Functions and the Aggregator will be AWS Kinesis Firehose.
 
 AWS Resources usage:
-    * AWS Lambda - Requester: Lambda function that starts the execution. This one requests the personal, location and financial information by publishing a message to a SNS Topic
-    * AWS Lambda - Replier-Personal-Information: Lambda function that replies the personal information
-    * AWS Lambda - Replier-Location-Information: Lambda function that replies the location information
-    * AWS Lambda - Replier-Financial-Information: Lambda function that replies the financial information
+* AWS Lambda - Requester: Lambda function that starts the execution. This one requests the personal, location and financial information by publishing a message to a SNS Topic.
+* AWS Lambda - Replier-Personal-Information: Lambda function that replies the personal information.
+* AWS Lambda - Replier-Location-Information: Lambda function that replies the location information.
+* AWS Lambda - Replier-Financial-Information: Lambda function that replies the financial information.
 
 ## Deploy Options
 
