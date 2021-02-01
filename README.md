@@ -19,23 +19,30 @@ AWS Resources usage:
 ## Deploy Options
 
 ### Global Deployment / Deletion
-terraform plan -var app_env="local"
-terraform validate
-terraform apply -var 'app_env=local' -auto-approve
-terraform destroy -var 'app_env=local' -auto-approve
+`terraform plan -var app_env="local"`
+
+`terraform validate`
+
+`terraform apply -var 'app_env=local' -auto-approve`
+
+`terraform destroy -var 'app_env=local' -auto-approve`
 
 ### Financial Information
-terraform plan -var app_env="local" -target=module.financial-information
-terraform deploy -var app_env="local" -target=module.financial-information
+`terraform plan -var app_env="local" -target=module.financial-information`
+
+`terraform deploy -var app_env="local" -target=module.financial-information`
 
 ### Location Information
-terraform plan -var app_env="local" -target=module.location-information
-terraform deploy -var app_env="local" -target=module.location-information
+`terraform plan -var app_env="local" -target=module.location-information`
+
+`terraform deploy -var app_env="local" -target=module.location-information`
 
 ### Personal Information
-terraform plan -var app_env="local" -target=module.personal-information
-terraform deploy -var app_env="local" -target=module.personal-information
+`terraform plan -var app_env="local" -target=module.personal-information`
+
+`terraform deploy -var app_env="local" -target=module.personal-information`
 
 ### Request Person Data
-terraform plan -var app_env="local" -target=module.request-person-data
-terraform deploy -var app_env="local" -target=module.request-person-data
+`terraform plan -var app_env="local" -target=module.request-person-data`
+
+`terraform deploy -var app_env="local" -target=module.request-person-data`
